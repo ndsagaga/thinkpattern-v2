@@ -1,4 +1,4 @@
-import { Dimensions, useWindowDimensions } from 'react-native';
+import { Dimensions, Platform, useWindowDimensions } from 'react-native';
 
 // Layout size class, three tiers (design: App Store tablet frames):
 //   split   — 13"-class iPad: rail + list + detail side by side.
@@ -25,6 +25,9 @@ export function useSizeClass(): SizeClass {
   const { width } = useWindowDimensions();
   const screen = Dimensions.get('screen');
   const minEdge = Math.min(screen.width, screen.height);
+  // Web always uses the phone layout, framed as a centred column on wide
+  // screens (lib/webFrame.web.ts). The tablet shells are native-only.
+  if (Platform.OS === 'web') return 'compact';
   if (minEdge >= LARGE_DEVICE_MIN_EDGE && width >= SPLIT_MIN_WIDTH) return 'split';
   if (minEdge >= TABLET_MIN_EDGE && width >= SINGLE_MIN_WIDTH) return 'single';
   return 'compact';

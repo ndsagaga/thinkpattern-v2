@@ -2,6 +2,7 @@
 // registered at the top level — outside the React tree, before the app mounts.
 // We do that here, then hand off to Expo Router's standard entry.
 import { registerBackgroundMessageHandler } from './lib/notifications/messaging';
+import './lib/webFrame';
 
 registerBackgroundMessageHandler();
 
