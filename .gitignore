@@ -1,0 +1,12 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+*.p8
+*.pem
+google-services.json
+GoogleService-Info.plist
+node_modules/
+.venv/
+__pycache__/
+.claude/settings.local.json
