@@ -1,5 +1,5 @@
 import { useRouter } from 'expo-router';
-import { Pressable, StyleSheet, Text, View, type GestureResponderEvent } from 'react-native';
+import { Pressable, StyleSheet, Text, View, type GestureResponderEvent, type StyleProp, type ViewStyle } from 'react-native';
 
 import { CommentIcon, HeartIcon } from '@/components/ReactionIcons';
 import { colors } from '@/constants/Colors';
@@ -13,12 +13,14 @@ import { supabase, type TargetType } from '@/lib/supabase';
 // /signin); comment opens the detail scrolled to its comments. Imperative
 // router because the card itself is already a <Link> — a nested Link would
 // nest anchors on web.
-export function CardReactions({ type, id }: { type: TargetType; id: string }) {
+type Props = { type: TargetType; id: string; style?: StyleProp<ViewStyle> };
+
+export function CardReactions(props: Props) {
   if (!supabase) return null;
-  return <CardReactionsInner type={type} id={id} />;
+  return <CardReactionsInner {...props} />;
 }
 
-function CardReactionsInner({ type, id }: { type: TargetType; id: string }) {
+function CardReactionsInner({ type, id, style }: Props) {
   const router = useRouter();
   const { user } = useAuth();
   const counts = useReactionCounts(type, user).data?.get(id);
@@ -41,7 +43,7 @@ function CardReactionsInner({ type, id }: { type: TargetType; id: string }) {
   };
 
   return (
-    <View style={styles.row}>
+    <View style={[styles.row, style]}>
       <Pressable
         onPress={onLike}
         style={({ pressed }) => [styles.button, liked && styles.buttonOn, pressed && styles.pressed]}

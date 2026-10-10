@@ -1,9 +1,11 @@
 import { StyleSheet, Text, View } from 'react-native';
 
+import { CardReactions } from '@/components/CardReactions';
 import { FNCap } from '@/components/fn/FNCap';
 import { FNSavedMark } from '@/components/fn/FNSavedMark';
 import { PerspAudioBadge } from '@/components/perspective/PerspAudioBadge';
 import { colors } from '@/constants/Colors';
+import { spacing } from '@/constants/Spacing';
 import { FRAUNCES_LEADING, fontFamily, fontSize } from '@/constants/Typography';
 import { parseInlineMarkdown } from '@/lib/markdown';
 import type { PerspectiveIndexEntry } from '@/types/contract';
@@ -35,12 +37,14 @@ export function PerspectiveListItem({ perspective, variant = 'card' }: Props) {
       <Text style={styles.thesis} numberOfLines={condensed ? 2 : undefined}>
         {parseInlineMarkdown(perspective.thesis, { boldFamily: fontFamily.displayBold })}
       </Text>
+      {condensed ? null : <CardReactions type="perspective" id={perspective.id} style={styles.reactions} />}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
   card: { paddingTop: 20, paddingBottom: 24 },
+  reactions: { marginTop: spacing.lg, marginBottom: 0 },
   eyebrow: { flexDirection: 'row', alignItems: 'center', gap: 8, marginBottom: 8 },
   title: {
     fontFamily: fontFamily.displayBold, // Fraunces 700 — editorial column headline
