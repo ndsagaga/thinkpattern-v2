@@ -1,0 +1,8 @@
+{
+  "buildCommand": "npm run build:web",
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/cdn/:path*", "destination": "https://internal.thinkpattern.ai/:path*" },
+    { "source": "/((?!_expo/|assets/|cdn/).*)", "destination": "/index.html" }
+  ]
+}

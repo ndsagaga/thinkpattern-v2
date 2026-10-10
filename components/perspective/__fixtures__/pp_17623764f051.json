@@ -1,0 +1,192 @@
+{
+  "id": "pp_17623764f051",
+  "shape": "arc",
+  "title": "A Year Without a Name",
+  "thesis": "A multi-year drought is ending not with a treaty or a verdict but with a budget line, eroding from emergency into a baseline that no longer makes the front page.",
+  "topic": null,
+  "body": "Some crises end with a treaty or a verdict. This one is ending with a budget line, quietly, in a season no one will remember by name [sy_50c2a513f37c, sy_a92b01562ca2].\n\n<then-now>\n<then>A year ago the drought was a forecast, and the response was framed as recovery and resilience [sy_50c2a513f37c].</then>\n<now>Today it is a fourth failed rains, record displacement, and an aid budget cut at exactly the wrong moment [sy_0c2d35f5f278, sy_a92b01562ca2].</now>\n</then-now>\n\n<stat value=\"4th\" label=\"consecutive failed rainy season across the Horn of Africa\">the point at which coping strategies run out [sy_50c2a513f37c]</stat>\n\n<quote display=\"card\">[qt_84f7a6576483]</quote>\n\nThe arc here is not escalation toward a climax but erosion toward an absence — the slow conversion of an emergency into a baseline that no longer makes the front page [sy_0c2d35f5f278, sy_a92b01562ca2].",
+  "body_nodes": [
+    {
+      "type": "prose",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "Some crises end with a treaty or a verdict. This one is ending with a budget line, quietly, in a season no one will remember by name "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_50c2a513f37c",
+            "sy_a92b01562ca2"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": ".\n\n"
+        }
+      ]
+    },
+    {
+      "type": "then_now",
+      "then": {
+        "spans": [
+          {
+            "kind": "text",
+            "text": "\n"
+          },
+          {
+            "kind": "text",
+            "text": "A year ago the drought was a forecast, and the response was framed as recovery and resilience "
+          },
+          {
+            "kind": "citation",
+            "refs": [
+              "sy_50c2a513f37c"
+            ]
+          },
+          {
+            "kind": "text",
+            "text": "."
+          },
+          {
+            "kind": "text",
+            "text": "\n"
+          }
+        ],
+        "quote_ids": [],
+        "label": null,
+        "date": null
+      },
+      "now": {
+        "spans": [
+          {
+            "kind": "text",
+            "text": "Today it is a fourth failed rains, record displacement, and an aid budget cut at exactly the wrong moment "
+          },
+          {
+            "kind": "citation",
+            "refs": [
+              "sy_0c2d35f5f278",
+              "sy_a92b01562ca2"
+            ]
+          },
+          {
+            "kind": "text",
+            "text": "."
+          },
+          {
+            "kind": "text",
+            "text": "\n"
+          }
+        ],
+        "quote_ids": [],
+        "label": null,
+        "date": null
+      }
+    },
+    {
+      "type": "stat",
+      "value": "4th",
+      "label": "consecutive failed rainy season across the Horn of Africa",
+      "context": [
+        {
+          "kind": "text",
+          "text": "the point at which coping strategies run out "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_50c2a513f37c"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "display": "card",
+      "quote_id": "qt_84f7a6576483"
+    },
+    {
+      "type": "prose",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "\n\nThe arc here is not escalation toward a climax but erosion toward an absence — the slow conversion of an emergency into a baseline that no longer makes the front page "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_0c2d35f5f278",
+            "sy_a92b01562ca2"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
+  "published_at": "2026-06-19T20:20:00Z",
+  "citations": [
+    {
+      "id": "sy_50c2a513f37c",
+      "kind": "story",
+      "title": "Horn of Africa Drought Enters Fourth Year",
+      "url": "stories/sy_50c2a513f37c.json",
+      "date": "2026-04-30T06:00:00Z"
+    },
+    {
+      "id": "sy_a92b01562ca2",
+      "kind": "story",
+      "title": "Major Donor Slashes Humanitarian Budget",
+      "url": "stories/sy_a92b01562ca2.json",
+      "date": "2026-06-13T15:00:00Z"
+    },
+    {
+      "id": "sy_0c2d35f5f278",
+      "kind": "story",
+      "title": "Cross-Border Displacement Hits New High",
+      "url": "stories/sy_0c2d35f5f278.json",
+      "date": "2026-06-05T10:00:00Z"
+    }
+  ],
+  "quotes": [
+    {
+      "id": "qt_84f7a6576483",
+      "text": "We are rationing survival now, not planning recovery.",
+      "speaker": "Cindy McCain",
+      "source_story_id": "sy_0c2d35f5f278",
+      "source_story_title": "Cross-Border Displacement Hits New High",
+      "source_story_url": "stories/sy_0c2d35f5f278.json",
+      "source_story_date": "2026-06-05T10:00:00Z"
+    }
+  ],
+  "cards": [],
+  "entities": [
+    {
+      "id": 7901,
+      "name": "World Food Programme",
+      "entity_type": "organization",
+      "role": "Aid agency rationing assistance as its budget is cut.",
+      "actor_id": null,
+      "actor_url": null,
+      "image_url": null,
+      "thumbnail_url": null,
+      "bio_line": null,
+      "summary": null
+    },
+    {
+      "id": 7902,
+      "name": "Office for the Coordination of Humanitarian Affairs",
+      "entity_type": "organization",
+      "role": "UN body tracking record cross-border displacement.",
+      "actor_id": null,
+      "actor_url": null,
+      "image_url": null,
+      "thumbnail_url": null,
+      "bio_line": null,
+      "summary": null
+    }
+  ]
+}

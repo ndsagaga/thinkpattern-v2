@@ -1,0 +1,61 @@
+# EAS Build upload filter. When this file is present, EAS prioritizes it over
+# .gitignore and does NOT consult .gitignore at all. So this mirrors .gitignore
+# EXACTLY, minus the two Firebase client-config files (GoogleService-Info.plist
+# / google-services.json): those are gitignored for VCS hygiene, but the cloud
+# build needs them (referenced by app.json `googleServicesFile`) and they ship
+# inside the app bundle anyway, so including them here is not a secret leak.
+# Genuinely-secret files (.env*.local → SENTRY_AUTH_TOKEN, *.p8 APNs key) stay
+# excluded. Keep in sync with .gitignore.
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Claude Code (local agent state + machine-local settings)
+.claude/
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# Google Play service-account key (used by `eas submit`, never by the build —
+# must NOT ride along in the upload tarball). Keep in sync with .gitignore.
+/thinkpattern-501318-0681f91fced7.json
+
+# typescript
+*.tsbuildinfo
+
+# generated native folders (EAS prebuilds these fresh via CNG)
+/ios
+/android
+
+# Local-only reference material (handoff docs, design exports)
+/docs/
+/design/
+
+.env.local

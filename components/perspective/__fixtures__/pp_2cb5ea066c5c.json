@@ -1,0 +1,231 @@
+{
+  "id": "pp_2cb5ea066c5c",
+  "shape": "thread",
+  "title": "From the Chip Ban to the Power Grid",
+  "thesis": "An export rule, a data-center groundbreaking, and a grid-shortfall warning filed to three different desks are one causal chain that no single agency owns end to end.",
+  "topic": "TECHNOLOGY",
+  "body": "Three stories filed under three different desks this month — trade, real estate, utilities — are the same story told in sequence [sy_1cfa44687550, sy_d4d66a02daef, sy_66ab57d60bca].\n\n<connection layout=\"chain\">\n<node>An export rule caps advanced-GPU shipments, pushing demand toward domestic build-outs [sy_1cfa44687550].</node>\nSo the capital that cannot buy banned chips abroad pours into building at home —\n<node>a hyperscaler breaks ground on a two-gigawatt campus, the largest single load ever proposed in the region [sy_d4d66a02daef].</node>\nwhich lands, finally, on infrastructure that was never sized for it —\n<node>the grid operator warns of summer shortfalls, naming data-center load as the swing factor [sy_66ab57d60bca].</node>\n</connection>\n\n<define term=\"interconnection queue\">the waiting line a new power plant or large load joins before it is allowed to connect to the grid; today it can run for years</define>\n\nThe thread runs from a trade desk in Washington to a substation in the desert, and no single agency owns its whole length [sy_1cfa44687550, sy_66ab57d60bca].\n\n<card kind=\"perspective\">[pp_22254db1a21a]</card>",
+  "body_nodes": [
+    {
+      "type": "prose",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "Three stories filed under three different desks this month — trade, real estate, utilities — are the same story told in sequence "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_1cfa44687550",
+            "sy_d4d66a02daef",
+            "sy_66ab57d60bca"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": ".\n\n"
+        }
+      ]
+    },
+    {
+      "type": "connection",
+      "layout": "chain",
+      "nodes": [
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "An export rule caps advanced-GPU shipments, pushing demand toward domestic build-outs "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_1cfa44687550"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "text",
+              "text": "\nSo the capital that cannot buy banned chips abroad pours into building at home —\n"
+            }
+          ],
+          "quote_ids": [],
+          "label": null,
+          "date": null
+        },
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "a hyperscaler breaks ground on a two-gigawatt campus, the largest single load ever proposed in the region "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_d4d66a02daef"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "text",
+              "text": "\nwhich lands, finally, on infrastructure that was never sized for it —\n"
+            }
+          ],
+          "quote_ids": [],
+          "label": null,
+          "date": null
+        },
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "the grid operator warns of summer shortfalls, naming data-center load as the swing factor "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_66ab57d60bca"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            }
+          ],
+          "quote_ids": [],
+          "label": null,
+          "date": null
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "\n\n"
+        },
+        {
+          "kind": "define",
+          "term": "interconnection queue",
+          "gloss": "the waiting line a new power plant or large load joins before it is allowed to connect to the grid; today it can run for years"
+        },
+        {
+          "kind": "text",
+          "text": "\n\nThe thread runs from a trade desk in Washington to a substation in the desert, and no single agency owns its whole length "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_1cfa44687550",
+            "sy_66ab57d60bca"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": ".\n\n"
+        }
+      ]
+    },
+    {
+      "type": "card",
+      "card_kind": "perspective",
+      "ref": "pp_22254db1a21a"
+    }
+  ],
+  "published_at": "2026-06-19T19:10:00Z",
+  "citations": [
+    {
+      "id": "sy_1cfa44687550",
+      "kind": "story",
+      "title": "New Export Rule Caps Advanced GPU Shipments",
+      "url": "stories/sy_1cfa44687550.json",
+      "date": "2026-05-02T10:00:00Z"
+    },
+    {
+      "id": "sy_d4d66a02daef",
+      "kind": "story",
+      "title": "Hyperscaler Breaks Ground on 2GW Campus",
+      "url": "stories/sy_d4d66a02daef.json",
+      "date": "2026-05-28T09:00:00Z"
+    },
+    {
+      "id": "sy_66ab57d60bca",
+      "kind": "story",
+      "title": "Regional Grid Operator Warns of Summer Shortfalls",
+      "url": "stories/sy_66ab57d60bca.json",
+      "date": "2026-06-14T17:00:00Z"
+    },
+    {
+      "id": "pp_22254db1a21a",
+      "kind": "perspective",
+      "title": "The Open-Weight Schism",
+      "url": "perspectives/pp_22254db1a21a.json",
+      "date": "2026-06-19T18:10:00Z"
+    }
+  ],
+  "quotes": [],
+  "cards": [
+    {
+      "kind": "perspective",
+      "id": "pp_22254db1a21a",
+      "title": "The Open-Weight Schism",
+      "url": "perspectives/pp_22254db1a21a.json",
+      "shape": "divide",
+      "thesis": "The frontier-AI debate has hardened from safety-versus-speed into a schism over who may hold model weights, and the EU's coming carve-out will encode one camp's worldview as the global default.",
+      "date": "2026-06-19T18:10:00Z"
+    }
+  ],
+  "entities": [
+    {
+      "id": 7400,
+      "name": "NVIDIA",
+      "entity_type": "organization",
+      "role": "Chipmaker whose banned shipments redirect capital toward domestic build-outs.",
+      "actor_id": 7400,
+      "actor_url": "actors/7400.json",
+      "image_url": "images/entities/7400.png",
+      "thumbnail_url": "images/entities/thumbs/7400.png",
+      "bio_line": "defensive",
+      "summary": "**NVIDIA** sits at the head of the chain: each tightening of export rules reshapes where its most advanced silicon — and the capital chasing it — can land."
+    },
+    {
+      "id": 7402,
+      "name": "Aurora Cloud",
+      "entity_type": "organization",
+      "role": "Hyperscaler that broke ground on the two-gigawatt campus.",
+      "actor_id": null,
+      "actor_url": null,
+      "image_url": null,
+      "thumbnail_url": null,
+      "bio_line": null,
+      "summary": null
+    },
+    {
+      "id": 7401,
+      "name": "Pacific Grid Operator",
+      "entity_type": "organization",
+      "role": "Regional operator warning that data-center load drives summer shortfalls.",
+      "actor_id": null,
+      "actor_url": null,
+      "image_url": null,
+      "thumbnail_url": null,
+      "bio_line": null,
+      "summary": null
+    }
+  ]
+}

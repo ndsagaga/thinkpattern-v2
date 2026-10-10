@@ -1,0 +1,84 @@
+{
+  "id": "pp_10408c3cb336",
+  "shape": "thread",
+  "title": "The Quiet Correlation",
+  "thesis": "A shipping-lane diversion and a grocery bill moved together this spring, a mechanical correlation hidden only by the lag and by the fact that each story was filed to a different desk.",
+  "topic": "BUSINESS",
+  "body": "No one announced a connection between a shipping lane and a grocery bill, but the two moved together this spring. As carriers diverted around the Red Sea, container rates climbed — and a month later the goods half of the inflation print followed them up [sy_9caae79effac, sy_466f4024101b].\n\nThe thread is unglamorous and entirely mechanical: a longer route is a higher cost, and a higher cost arrives, eventually, at the till. The lag is the only thing that hides it [sy_9caae79effac, sy_466f4024101b].\n\nWhat makes the correlation quiet is that each story was filed to a different desk. Logistics reported the diversions; the macro desk reported the print; almost no one drew the line between them [sy_466f4024101b].",
+  "body_nodes": [
+    {
+      "type": "prose",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "No one announced a connection between a shipping lane and a grocery bill, but the two moved together this spring. As carriers diverted around the Red Sea, container rates climbed — and a month later the goods half of the inflation print followed them up "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_9caae79effac",
+            "sy_466f4024101b"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": ".\n\nThe thread is unglamorous and entirely mechanical: a longer route is a higher cost, and a higher cost arrives, eventually, at the till. The lag is the only thing that hides it "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_9caae79effac",
+            "sy_466f4024101b"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": ".\n\nWhat makes the correlation quiet is that each story was filed to a different desk. Logistics reported the diversions; the macro desk reported the print; almost no one drew the line between them "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_466f4024101b"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
+  "published_at": "2026-06-19T20:05:00Z",
+  "citations": [
+    {
+      "id": "sy_9caae79effac",
+      "kind": "story",
+      "title": "Container Rates Spike on Red Sea Diversions",
+      "url": "stories/sy_9caae79effac.json",
+      "date": "2026-06-08T07:00:00Z"
+    },
+    {
+      "id": "sy_466f4024101b",
+      "kind": "story",
+      "title": "Core Goods Inflation Ticks Up in May Print",
+      "url": "stories/sy_466f4024101b.json",
+      "date": "2026-06-12T13:30:00Z"
+    }
+  ],
+  "quotes": [],
+  "cards": [],
+  "entities": [
+    {
+      "id": 7800,
+      "name": "A.P. Moller-Maersk",
+      "entity_type": "organization",
+      "role": "Carrier whose Red Sea diversions lengthened routes and lifted rates.",
+      "actor_id": null,
+      "actor_url": null,
+      "image_url": null,
+      "thumbnail_url": null,
+      "bio_line": null,
+      "summary": null
+    }
+  ]
+}

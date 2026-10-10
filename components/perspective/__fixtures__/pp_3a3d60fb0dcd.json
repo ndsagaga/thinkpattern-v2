@@ -1,0 +1,234 @@
+{
+  "id": "pp_3a3d60fb0dcd",
+  "shape": "contradiction",
+  "title": "The Vanishing Mandate",
+  "thesis": "A plurality declared a mandate on election night and had no government within forty-eight hours, a contradiction that is structural rather than personal.",
+  "topic": "POLITICS",
+  "body": "The winner declared a mandate on election night. Two days later there was no government, no majority, and no obvious path to either [sy_dfff66e9c051, sy_37713f2aea46].\n\n<then-now>\n<then>On election night the leading party claimed a decisive mandate from a narrow plurality [sy_dfff66e9c051].</then>\n<now>Within forty-eight hours coalition talks had collapsed over cabinet seats, leaving the \"mandate\" without a majority to enact it [sy_37713f2aea46].</now>\n</then-now>\n\n<card kind=\"story\">[sy_37713f2aea46]</card>\n\n<quote display=\"card\">[qt_be9b7c8f77c0]</quote>\n\nThe contradiction is structural, not personal: a plurality is read as a mandate on the night and exposed as a negotiation by the weekend [sy_dfff66e9c051, sy_37713f2aea46].\n\n<quote display=\"hero\">[qt_26489b4de40f]</quote>\n\n<card kind=\"perspective\">[pp_3db4320e6306]</card>\n\n<callout>\"Mandate\" is the word a plurality uses before it has counted its partners [sy_dfff66e9c051, pp_3db4320e6306]</callout>",
+  "body_nodes": [
+    {
+      "type": "prose",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "The winner declared a mandate on election night. Two days later there was no government, no majority, and no obvious path to either "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_dfff66e9c051",
+            "sy_37713f2aea46"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": ".\n\n"
+        }
+      ]
+    },
+    {
+      "type": "then_now",
+      "then": {
+        "spans": [
+          {
+            "kind": "text",
+            "text": "\n"
+          },
+          {
+            "kind": "text",
+            "text": "On election night the leading party claimed a decisive mandate from a narrow plurality "
+          },
+          {
+            "kind": "citation",
+            "refs": [
+              "sy_dfff66e9c051"
+            ]
+          },
+          {
+            "kind": "text",
+            "text": "."
+          },
+          {
+            "kind": "text",
+            "text": "\n"
+          }
+        ],
+        "quote_ids": [],
+        "label": null,
+        "date": null
+      },
+      "now": {
+        "spans": [
+          {
+            "kind": "text",
+            "text": "Within forty-eight hours coalition talks had collapsed over cabinet seats, leaving the \"mandate\" without a majority to enact it "
+          },
+          {
+            "kind": "citation",
+            "refs": [
+              "sy_37713f2aea46"
+            ]
+          },
+          {
+            "kind": "text",
+            "text": "."
+          },
+          {
+            "kind": "text",
+            "text": "\n"
+          }
+        ],
+        "quote_ids": [],
+        "label": null,
+        "date": null
+      }
+    },
+    {
+      "type": "card",
+      "card_kind": "story",
+      "ref": "sy_37713f2aea46"
+    },
+    {
+      "type": "quote",
+      "display": "card",
+      "quote_id": "qt_be9b7c8f77c0"
+    },
+    {
+      "type": "prose",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "\n\nThe contradiction is structural, not personal: a plurality is read as a mandate on the night and exposed as a negotiation by the weekend "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_dfff66e9c051",
+            "sy_37713f2aea46"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": ".\n\n"
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "display": "hero",
+      "quote_id": "qt_26489b4de40f"
+    },
+    {
+      "type": "card",
+      "card_kind": "perspective",
+      "ref": "pp_3db4320e6306"
+    },
+    {
+      "type": "callout",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "\"Mandate\" is the word a plurality uses before it has counted its partners "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_dfff66e9c051",
+            "pp_3db4320e6306"
+          ]
+        }
+      ]
+    }
+  ],
+  "published_at": "2026-06-19T19:55:00Z",
+  "citations": [
+    {
+      "id": "sy_dfff66e9c051",
+      "kind": "story",
+      "title": "Exit Polls Show Narrow Plurality, No Majority",
+      "url": null,
+      "date": "2026-06-16T21:00:00Z"
+    },
+    {
+      "id": "sy_37713f2aea46",
+      "kind": "story",
+      "title": "Coalition Talks Collapse Over Cabinet Seats",
+      "url": null,
+      "date": "2026-06-18T19:00:00Z"
+    },
+    {
+      "id": "pp_3db4320e6306",
+      "kind": "perspective",
+      "title": "The Coalition Trap",
+      "url": null,
+      "date": "2026-01-12T09:00:00Z"
+    }
+  ],
+  "quotes": [
+    {
+      "id": "qt_be9b7c8f77c0",
+      "text": "A mandate you have to assemble in a back room was never a mandate.",
+      "speaker": "Anonymous strategist",
+      "source_story_id": null,
+      "source_story_title": null,
+      "source_story_url": null,
+      "source_story_date": null
+    },
+    {
+      "id": "qt_26489b4de40f",
+      "text": "The seat math was always going to win. The slogan just got there first.",
+      "speaker": "Coalition negotiator",
+      "source_story_id": "sy_37713f2aea46",
+      "source_story_title": "Coalition Talks Collapse Over Cabinet Seats",
+      "source_story_url": null,
+      "source_story_date": "2026-06-18T19:00:00Z"
+    }
+  ],
+  "cards": [
+    {
+      "kind": "story",
+      "id": "sy_37713f2aea46",
+      "title": "Coalition Talks Collapse Over Cabinet Seats",
+      "url": null,
+      "date": "2026-06-18T19:00:00Z",
+      "image_url": "https://cdn.example.com/parliament.jpg",
+      "outlet_count": 6,
+      "summary": "Two days after the vote, coalition negotiations broke down over the allocation of cabinet seats."
+    },
+    {
+      "kind": "perspective",
+      "id": "pp_3db4320e6306",
+      "title": "The Coalition Trap",
+      "url": null,
+      "shape": "contradiction",
+      "thesis": "A plurality read as a mandate is exposed as a negotiation the moment the seats are counted.",
+      "date": "2026-01-12T09:00:00Z"
+    }
+  ],
+  "entities": [
+    {
+      "id": 7700,
+      "name": "Tomas Reyes",
+      "entity_type": "person",
+      "role": "Leading-party figure who claimed a mandate from a narrow plurality.",
+      "actor_id": null,
+      "actor_url": null,
+      "image_url": null,
+      "thumbnail_url": null,
+      "bio_line": null,
+      "summary": null
+    },
+    {
+      "id": 7701,
+      "name": "Unity Bloc",
+      "entity_type": "organization",
+      "role": "Coalition partner whose cabinet-seat demands broke the talks.",
+      "actor_id": null,
+      "actor_url": null,
+      "image_url": null,
+      "thumbnail_url": null,
+      "bio_line": null,
+      "summary": null
+    }
+  ]
+}

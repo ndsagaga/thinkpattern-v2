@@ -1,12 +1,64 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Claude Code (local agent state + machine-local settings)
+.claude/
+
+# Native
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Firebase config (client config, per-environment; referenced by app.json
+# googleServicesFile and copied into the native project by prebuild — kept
+# out of VCS, dropped on each machine / injected at build time)
+/GoogleService-Info.plist
+/google-services.json
+/thinkpattern-501318-0681f91fced7.json
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
 .DS_Store
+*.pem
+
+# local env files
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# generated native folders
+/ios
+/android
+
+# Local-only reference material (handoff docs, design exports) — not part of the repo
+/docs/
+/design/
+
+.env.local
+
+# env
 .env
 .env.*
 !.env.example
-*.p8
 *.pem
-google-services.json
-GoogleService-Info.plist
-node_modules/
-.venv/
-__pycache__/
-.claude/settings.local.json
+.vercel

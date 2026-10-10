@@ -1,0 +1,477 @@
+{
+  "id": "pp_e27d7568051d",
+  "shape": "pattern",
+  "title": "The Anatomy of a Standard",
+  "thesis": "Rules for how minors use the internet are being written in Brussels and Kuala Lumpur and then exported line by line into products billions use, because copying the strictest regime is cheaper than fighting fifty.",
+  "topic": "TECHNOLOGY",
+  "body": "Every global technology standard begins as somebody's local rule. The current rules for how minors use the internet are no exception — they are being written in Brussels and Kuala Lumpur, then exported, line by line, into products billions of people use [sy_73bed3601388, sy_afb054da616f].\n\n<define term=\"age assurance\">the umbrella term for any method — self-declaration, ID checks, or biometric estimation — used to establish a user's age before granting access</define>\n\nThe mechanism is rarely a treaty. It is a reference implementation that is simply easier to copy than to argue with.\n\n<card kind=\"story\">[sy_73bed3601388]</card>\n\n<timeline emphasis=\"plain\">\n<step date=\"2026-05-31\">Malaysia bans social media for under-16s and mandates ID-based age checks [sy_afb054da616f].</step>\n<step date=\"2026-06-01\">The EU ships an age-verification reference app pitched as a template for any jurisdiction [sy_73bed3601388]. [qt_958cd246b308]</step>\n<step date=\"2026-06-02\">Meta switches every under-18 account worldwide into a restricted \"Teen Account\" tier [sy_1ed35e771424].</step>\n<step date=\"2026-06-10\">Snap limits under-16 profiles to mutual friends, globally [sy_50b0fcf56774].</step>\n</timeline>\n\nNotice what the dates show: the platforms did not wait for their own governments. They adopted the strictest available regime as a worldwide default, because maintaining one strict product is cheaper than maintaining fifty [sy_1ed35e771424, sy_50b0fcf56774].\n\n<stat value=\"8M\" label=\"user threshold above which Malaysia's ID-and-biometrics mandate applies\">the line between a niche app and a regulated one [sy_afb054da616f]</stat>\n\n<quote display=\"hero\">[qt_52fb3679b07e]</quote>\n\n<instances as=\"cards\">\n<item>Meta's Teen Accounts default to filtered content and restricted messaging for everyone under 18 [sy_1ed35e771424].</item>\n<item>Snap walls under-16 profiles behind mutual-friend approval [sy_50b0fcf56774].</item>\n<item>The EU's app turns a policy directive into a downloadable SDK any platform can embed [sy_73bed3601388].</item>\n</instances>\n\n<card kind=\"actor\">Meta</card>\n\n<callout>A standard does not win because it is the best. It wins because it is the one that is already implemented when the deadline arrives [sy_73bed3601388, sy_1ed35e771424]</callout>\n\nThe open question is who audits the template once everyone has copied it. A draft technical spec now circulating would formalize the age-assurance layer, but it has not been ratified — and until it is, the de facto standard is whatever Meta shipped last [sy_a0131b7a895f, sy_1ed35e771424].\n\n<card kind=\"perspective\">[pp_603ac7324dfb]</card>",
+  "body_nodes": [
+    {
+      "type": "prose",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "Every global technology standard begins as somebody's local rule. The current rules for how minors use the internet are no exception — they are being written in Brussels and Kuala Lumpur, then exported, line by line, into products billions of people use "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_73bed3601388",
+            "sy_afb054da616f"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": ".\n\n"
+        },
+        {
+          "kind": "define",
+          "term": "age assurance",
+          "gloss": "the umbrella term for any method — self-declaration, ID checks, or biometric estimation — used to establish a user's age before granting access"
+        },
+        {
+          "kind": "text",
+          "text": "\n\nThe mechanism is rarely a treaty. It is a reference implementation that is simply easier to copy than to argue with.\n\n"
+        }
+      ]
+    },
+    {
+      "type": "card",
+      "card_kind": "story",
+      "ref": "sy_73bed3601388"
+    },
+    {
+      "type": "timeline",
+      "emphasis": "plain",
+      "steps": [
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "Malaysia bans social media for under-16s and mandates ID-based age checks "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_afb054da616f"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            }
+          ],
+          "quote_ids": [],
+          "label": null,
+          "date": "2026-05-31"
+        },
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "The EU ships an age-verification reference app pitched as a template for any jurisdiction "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_73bed3601388"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": ". "
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            }
+          ],
+          "quote_ids": [
+            "qt_958cd246b308"
+          ],
+          "label": null,
+          "date": "2026-06-01"
+        },
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "Meta switches every under-18 account worldwide into a restricted \"Teen Account\" tier "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_1ed35e771424"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            }
+          ],
+          "quote_ids": [],
+          "label": null,
+          "date": "2026-06-02"
+        },
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "Snap limits under-16 profiles to mutual friends, globally "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_50b0fcf56774"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            }
+          ],
+          "quote_ids": [],
+          "label": null,
+          "date": "2026-06-10"
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "\n\nNotice what the dates show: the platforms did not wait for their own governments. They adopted the strictest available regime as a worldwide default, because maintaining one strict product is cheaper than maintaining fifty "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_1ed35e771424",
+            "sy_50b0fcf56774"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": ".\n\n"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "8M",
+      "label": "user threshold above which Malaysia's ID-and-biometrics mandate applies",
+      "context": [
+        {
+          "kind": "text",
+          "text": "the line between a niche app and a regulated one "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_afb054da616f"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "display": "hero",
+      "quote_id": "qt_52fb3679b07e"
+    },
+    {
+      "type": "instances",
+      "arrangement": "cards",
+      "items": [
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "Meta's Teen Accounts default to filtered content and restricted messaging for everyone under 18 "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_1ed35e771424"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            }
+          ],
+          "quote_ids": [],
+          "label": null,
+          "date": null
+        },
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "Snap walls under-16 profiles behind mutual-friend approval "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_50b0fcf56774"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            }
+          ],
+          "quote_ids": [],
+          "label": null,
+          "date": null
+        },
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "The EU's app turns a policy directive into a downloadable SDK any platform can embed "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_73bed3601388"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            }
+          ],
+          "quote_ids": [],
+          "label": null,
+          "date": null
+        }
+      ]
+    },
+    {
+      "type": "card",
+      "card_kind": "actor",
+      "ref": "1353"
+    },
+    {
+      "type": "callout",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "A standard does not win because it is the best. It wins because it is the one that is already implemented when the deadline arrives "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_73bed3601388",
+            "sy_1ed35e771424"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "\n\nThe open question is who audits the template once everyone has copied it. A draft technical spec now circulating would formalize the age-assurance layer, but it has not been ratified — and until it is, the de facto standard is whatever Meta shipped last "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_a0131b7a895f",
+            "sy_1ed35e771424"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": ".\n\n"
+        }
+      ]
+    },
+    {
+      "type": "card",
+      "card_kind": "perspective",
+      "ref": "pp_603ac7324dfb"
+    }
+  ],
+  "published_at": "2026-06-19T19:40:00Z",
+  "citations": [
+    {
+      "id": "sy_73bed3601388",
+      "kind": "story",
+      "title": "EU Ships Age-Verification Reference App",
+      "url": "stories/sy_73bed3601388.json",
+      "date": "2026-06-01T10:00:00Z"
+    },
+    {
+      "id": "sy_afb054da616f",
+      "kind": "story",
+      "title": "Malaysia Bans Under-16 Social Media",
+      "url": "stories/sy_afb054da616f.json",
+      "date": "2026-05-31T17:00:00Z"
+    },
+    {
+      "id": "sy_1ed35e771424",
+      "kind": "story",
+      "title": "Meta Rolls Out Teen Accounts Globally",
+      "url": "stories/sy_1ed35e771424.json",
+      "date": "2026-06-02T12:45:00Z"
+    },
+    {
+      "id": "sy_50b0fcf56774",
+      "kind": "story",
+      "title": "Snap Limits Under-16 Profiles",
+      "url": "stories/sy_50b0fcf56774.json",
+      "date": "2026-06-10T14:00:00Z"
+    },
+    {
+      "id": "sy_a0131b7a895f",
+      "kind": "story",
+      "title": "Draft W3C Age-Assurance Spec Circulates",
+      "url": null,
+      "date": "2026-06-17T09:00:00Z"
+    },
+    {
+      "id": "pp_603ac7324dfb",
+      "kind": "perspective",
+      "title": "The Compliance Moat",
+      "url": null,
+      "date": "2026-05-30T11:00:00Z"
+    }
+  ],
+  "quotes": [
+    {
+      "id": "qt_958cd246b308",
+      "text": "We did not set out to write the world's rules. We set out to write ours, clearly.",
+      "speaker": "Henna Virkkunen",
+      "source_story_id": "sy_73bed3601388",
+      "source_story_title": "EU Ships Age-Verification Reference App",
+      "source_story_url": "stories/sy_73bed3601388.json",
+      "source_story_date": "2026-06-01T10:00:00Z"
+    },
+    {
+      "id": "qt_52fb3679b07e",
+      "text": "Compliance used to be a map. Now it is a single coordinate.",
+      "speaker": "Nick Clegg",
+      "source_story_id": "sy_1ed35e771424",
+      "source_story_title": "Meta Rolls Out Teen Accounts Globally",
+      "source_story_url": "stories/sy_1ed35e771424.json",
+      "source_story_date": "2026-06-02T12:45:00Z"
+    }
+  ],
+  "cards": [
+    {
+      "kind": "story",
+      "id": "sy_73bed3601388",
+      "title": "EU Ships Age-Verification Reference App",
+      "url": "stories/sy_73bed3601388.json",
+      "date": "2026-06-01T10:00:00Z",
+      "image_url": "https://cdn.example.com/eu-age-app.jpg",
+      "outlet_count": 15,
+      "summary": "Brussels released a reference age-verification app pitched as a template for any jurisdiction."
+    },
+    {
+      "kind": "perspective",
+      "id": "pp_603ac7324dfb",
+      "title": "The Compliance Moat",
+      "url": null,
+      "shape": "pattern",
+      "thesis": "Platforms are adopting the world's most restrictive minor-safety regime as a single global default.",
+      "date": "2026-05-30T11:00:00Z"
+    }
+  ],
+  "entities": [
+    {
+      "id": 1353,
+      "name": "Meta",
+      "entity_type": "organization",
+      "role": "Adopted the strictest minor-safety regime as a worldwide product default.",
+      "actor_id": 1353,
+      "actor_url": "actors/1353.json",
+      "image_url": "images/entities/1353.png",
+      "thumbnail_url": "images/entities/thumbs/1353.png",
+      "bio_line": "combative",
+      "summary": "**Meta** has chosen to ship the most restrictive available minor-safety configuration globally, treating a single strict product as cheaper than per-jurisdiction variants."
+    },
+    {
+      "id": 523,
+      "name": "European Union",
+      "entity_type": "organization",
+      "role": "Shipped the reference age-verification app pitched as a global template.",
+      "actor_id": null,
+      "actor_url": null,
+      "image_url": null,
+      "thumbnail_url": null,
+      "bio_line": null,
+      "summary": null
+    },
+    {
+      "id": 22457,
+      "name": "Snap Inc.",
+      "entity_type": "organization",
+      "role": "Walled under-16 profiles behind mutual-friend approval worldwide.",
+      "actor_id": null,
+      "actor_url": null,
+      "image_url": null,
+      "thumbnail_url": null,
+      "bio_line": null,
+      "summary": null
+    },
+    {
+      "id": 7600,
+      "name": "Henna Virkkunen",
+      "entity_type": "person",
+      "role": "EU official who framed the app as Europe's own rules, clearly stated.",
+      "actor_id": null,
+      "actor_url": null,
+      "image_url": null,
+      "thumbnail_url": null,
+      "bio_line": null,
+      "summary": null
+    },
+    {
+      "id": 7601,
+      "name": "Nick Clegg",
+      "entity_type": "person",
+      "role": "Platform executive who described compliance collapsing to a single coordinate.",
+      "actor_id": null,
+      "actor_url": null,
+      "image_url": null,
+      "thumbnail_url": null,
+      "bio_line": null,
+      "summary": null
+    }
+  ]
+}

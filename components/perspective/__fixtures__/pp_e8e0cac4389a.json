@@ -1,0 +1,181 @@
+{
+  "id": "pp_e8e0cac4389a",
+  "shape": "contradiction",
+  "title": "The Deficit Hawk's Reversal",
+  "thesis": "The chamber's most reliable deficit hawk authored the largest unfunded package of his career, a reversal that quietly confirms the politics of austerity have collapsed.",
+  "topic": "POLITICS",
+  "body": "The most reliable deficit hawk in the chamber spent a decade warning that unfunded spending would break the country. This month he wrote the largest unfunded package of his career [sy_4f593774e9e3, sy_db8cd8e744fc].\n\n<then-now>\n<then>On the 2024 trail he made a balanced budget the centerpiece of his platform, calling new deficit spending \"generational theft\" [sy_4f593774e9e3].</then>\n<now>This June he sponsored a $900 billion domestic-investment bill that the budget office scores as deeply unfunded [sy_db8cd8e744fc].</now>\n</then-now>\n\n<card kind=\"story\">[sy_db8cd8e744fc]</card>\n\n<stat value=\"$1.4T\" label=\"projected ten-year addition to the deficit from the new package\">the number he once called disqualifying [sy_db8cd8e744fc]</stat>\n\n<callout>The reversal is not hypocrisy so much as a confession: the politics of austerity died quietly, and even its loudest champion has stopped paying for the funeral [sy_4f593774e9e3, sy_db8cd8e744fc]</callout>",
+  "body_nodes": [
+    {
+      "type": "prose",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "The most reliable deficit hawk in the chamber spent a decade warning that unfunded spending would break the country. This month he wrote the largest unfunded package of his career "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_4f593774e9e3",
+            "sy_db8cd8e744fc"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": ".\n\n"
+        }
+      ]
+    },
+    {
+      "type": "then_now",
+      "then": {
+        "spans": [
+          {
+            "kind": "text",
+            "text": "\n"
+          },
+          {
+            "kind": "text",
+            "text": "On the 2024 trail he made a balanced budget the centerpiece of his platform, calling new deficit spending \"generational theft\" "
+          },
+          {
+            "kind": "citation",
+            "refs": [
+              "sy_4f593774e9e3"
+            ]
+          },
+          {
+            "kind": "text",
+            "text": "."
+          },
+          {
+            "kind": "text",
+            "text": "\n"
+          }
+        ],
+        "quote_ids": [],
+        "label": null,
+        "date": null
+      },
+      "now": {
+        "spans": [
+          {
+            "kind": "text",
+            "text": "This June he sponsored a $900 billion domestic-investment bill that the budget office scores as deeply unfunded "
+          },
+          {
+            "kind": "citation",
+            "refs": [
+              "sy_db8cd8e744fc"
+            ]
+          },
+          {
+            "kind": "text",
+            "text": "."
+          },
+          {
+            "kind": "text",
+            "text": "\n"
+          }
+        ],
+        "quote_ids": [],
+        "label": null,
+        "date": null
+      }
+    },
+    {
+      "type": "card",
+      "card_kind": "story",
+      "ref": "sy_db8cd8e744fc"
+    },
+    {
+      "type": "stat",
+      "value": "$1.4T",
+      "label": "projected ten-year addition to the deficit from the new package",
+      "context": [
+        {
+          "kind": "text",
+          "text": "the number he once called disqualifying "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_db8cd8e744fc"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "The reversal is not hypocrisy so much as a confession: the politics of austerity died quietly, and even its loudest champion has stopped paying for the funeral "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_4f593774e9e3",
+            "sy_db8cd8e744fc"
+          ]
+        }
+      ]
+    }
+  ],
+  "published_at": "2026-06-19T18:55:00Z",
+  "citations": [
+    {
+      "id": "sy_4f593774e9e3",
+      "kind": "story",
+      "title": "Senator Pledged Balanced Budget in 2024 Campaign",
+      "url": "stories/sy_4f593774e9e3.json",
+      "date": "2024-09-10T16:00:00Z"
+    },
+    {
+      "id": "sy_db8cd8e744fc",
+      "kind": "story",
+      "title": "Senate Passes $900B Domestic Investment Package",
+      "url": "stories/sy_db8cd8e744fc.json",
+      "date": "2026-06-10T22:00:00Z"
+    }
+  ],
+  "quotes": [],
+  "cards": [
+    {
+      "kind": "story",
+      "id": "sy_db8cd8e744fc",
+      "title": "Senate Passes $900B Domestic Investment Package",
+      "url": "stories/sy_db8cd8e744fc.json",
+      "date": "2026-06-10T22:00:00Z",
+      "image_url": "https://cdn.example.com/senate-floor.jpg",
+      "outlet_count": 12,
+      "summary": "The chamber passed its largest unfunded spending package in a decade on a narrow vote."
+    }
+  ],
+  "entities": [
+    {
+      "id": 7300,
+      "name": "Marcus Halloran",
+      "entity_type": "person",
+      "role": "Veteran senator who reversed a decade of deficit-hawk positioning.",
+      "actor_id": 7300,
+      "actor_url": "actors/7300.json",
+      "image_url": "images/entities/7300.png",
+      "thumbnail_url": "images/entities/thumbs/7300.png",
+      "bio_line": "embattled",
+      "summary": "**Marcus Halloran** built his national profile on fiscal restraint; sponsoring a large unfunded package has left him defending the shift against his own past speeches."
+    },
+    {
+      "id": 7301,
+      "name": "Senate Budget Committee",
+      "entity_type": "organization",
+      "role": "Scored the package as deeply unfunded over ten years.",
+      "actor_id": null,
+      "actor_url": null,
+      "image_url": null,
+      "thumbnail_url": null,
+      "bio_line": null,
+      "summary": null
+    }
+  ]
+}

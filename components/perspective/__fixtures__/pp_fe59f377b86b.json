@@ -1,0 +1,237 @@
+{
+  "id": "pp_fe59f377b86b",
+  "shape": "pattern",
+  "title": "One Playbook, Three Capitals",
+  "thesis": "Across Ankara, New Delhi, and Budapest the same sequence runs — contest the count, starve the critics, narrow the exits — a playbook that needs no author to coordinate it.",
+  "topic": "WORLD",
+  "body": "The leaders do not coordinate, share an ideology, or in some cases even speak. Yet across three capitals this spring the same sequence runs: contest the count, starve the critics, narrow the exits [sy_410fc0a565c9, sy_197ff0249bcf, sy_ed4687a441a0].\n\n<instances as=\"portraits\">\n<item>In Ankara, opposition mayors are detained weeks before a vote, decapitating the local machine that would run the campaign [sy_410fc0a565c9].</item>\n<item>In New Delhi, foreign-funding rules are tightened until the NGOs that monitor elections cannot make payroll [sy_197ff0249bcf].</item>\n<item>In Budapest, a financing move quietly defunds the last independent newsroom [sy_ed4687a441a0].</item>\n</instances>\n\n<card kind=\"actor\">Recep Tayyip Erdoğan</card>\n<card kind=\"actor\">Viktor Orbán</card>\n\n<quote display=\"card\">[qt_779c708ac084]</quote>\n\nIt is a playbook precisely because it needs no author. Each move is locally legal, individually deniable, and only legible as a pattern when the three are laid side by side [sy_410fc0a565c9, sy_ed4687a441a0].",
+  "body_nodes": [
+    {
+      "type": "prose",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "The leaders do not coordinate, share an ideology, or in some cases even speak. Yet across three capitals this spring the same sequence runs: contest the count, starve the critics, narrow the exits "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_410fc0a565c9",
+            "sy_197ff0249bcf",
+            "sy_ed4687a441a0"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": ".\n\n"
+        }
+      ]
+    },
+    {
+      "type": "instances",
+      "arrangement": "portraits",
+      "items": [
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "In Ankara, opposition mayors are detained weeks before a vote, decapitating the local machine that would run the campaign "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_410fc0a565c9"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            }
+          ],
+          "quote_ids": [],
+          "label": null,
+          "date": null
+        },
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "In New Delhi, foreign-funding rules are tightened until the NGOs that monitor elections cannot make payroll "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_197ff0249bcf"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            }
+          ],
+          "quote_ids": [],
+          "label": null,
+          "date": null
+        },
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "In Budapest, a financing move quietly defunds the last independent newsroom "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_ed4687a441a0"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            }
+          ],
+          "quote_ids": [],
+          "label": null,
+          "date": null
+        }
+      ]
+    },
+    {
+      "type": "card",
+      "card_kind": "actor",
+      "ref": "7500"
+    },
+    {
+      "type": "card",
+      "card_kind": "actor",
+      "ref": "7501"
+    },
+    {
+      "type": "quote",
+      "display": "card",
+      "quote_id": "qt_779c708ac084"
+    },
+    {
+      "type": "prose",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "\n\nIt is a playbook precisely because it needs no author. Each move is locally legal, individually deniable, and only legible as a pattern when the three are laid side by side "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_410fc0a565c9",
+            "sy_ed4687a441a0"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
+  "published_at": "2026-06-19T19:25:00Z",
+  "citations": [
+    {
+      "id": "sy_410fc0a565c9",
+      "kind": "story",
+      "title": "Ankara Detains Opposition Mayors Ahead of Vote",
+      "url": "stories/sy_410fc0a565c9.json",
+      "date": "2026-06-03T08:00:00Z"
+    },
+    {
+      "id": "sy_197ff0249bcf",
+      "kind": "story",
+      "title": "New Delhi Tightens Foreign-Funding Rules on NGOs",
+      "url": "stories/sy_197ff0249bcf.json",
+      "date": "2026-05-25T11:00:00Z"
+    },
+    {
+      "id": "sy_ed4687a441a0",
+      "kind": "story",
+      "title": "Budapest Moves to Defund Independent Media",
+      "url": "stories/sy_ed4687a441a0.json",
+      "date": "2026-06-09T14:00:00Z"
+    }
+  ],
+  "quotes": [
+    {
+      "id": "qt_779c708ac084",
+      "text": "The methods rhyme even when the leaders never speak.",
+      "speaker": "Nils Muiznieks",
+      "source_story_id": "sy_ed4687a441a0",
+      "source_story_title": "Budapest Moves to Defund Independent Media",
+      "source_story_url": "stories/sy_ed4687a441a0.json",
+      "source_story_date": "2026-06-09T14:00:00Z"
+    }
+  ],
+  "cards": [],
+  "entities": [
+    {
+      "id": 7500,
+      "name": "Recep Tayyip Erdoğan",
+      "entity_type": "person",
+      "role": "President whose government detained opposition mayors before a vote.",
+      "actor_id": 7500,
+      "actor_url": "actors/7500.json",
+      "image_url": "images/entities/7500.png",
+      "thumbnail_url": "images/entities/thumbs/7500.png",
+      "bio_line": "combative",
+      "summary": "**Recep Tayyip Erdoğan** has paired electoral contests with pre-emptive detentions of local opposition figures, a tactic critics call lawfare."
+    },
+    {
+      "id": 7501,
+      "name": "Viktor Orbán",
+      "entity_type": "person",
+      "role": "Prime minister advancing measures that defund independent media.",
+      "actor_id": 7501,
+      "actor_url": "actors/7501.json",
+      "image_url": "images/entities/7501.png",
+      "thumbnail_url": "images/entities/thumbs/7501.png",
+      "bio_line": "triumphant",
+      "summary": "**Viktor Orbán** is widely treated as the template for the playbook, having normalized the financial squeeze of independent newsrooms."
+    },
+    {
+      "id": 91,
+      "name": "Narendra Modi",
+      "entity_type": "person",
+      "role": "Prime minister whose government tightened NGO foreign-funding rules.",
+      "actor_id": 91,
+      "actor_url": "actors/91.json",
+      "image_url": "images/entities/91.png",
+      "thumbnail_url": "images/entities/thumbs/91.png",
+      "bio_line": "collaborative",
+      "summary": "**Narendra Modi**'s administration has tightened the foreign-funding regime that election-monitoring NGOs depend on, framing it as a sovereignty measure."
+    },
+    {
+      "id": 7502,
+      "name": "Nils Muiznieks",
+      "entity_type": "person",
+      "role": "Rights monitor who named the cross-border pattern.",
+      "actor_id": 7502,
+      "actor_url": "actors/7502.json",
+      "image_url": "images/entities/7502.png",
+      "thumbnail_url": "images/entities/thumbs/7502.png",
+      "bio_line": "neutral",
+      "summary": "**Nils Muiznieks** tracks the convergence of these tactics across unrelated governments and argues the resemblance is structural, not coordinated."
+    }
+  ]
+}

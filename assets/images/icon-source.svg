@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <!-- Paper background. iOS app icons must be opaque (the rounded mask crops a
+       transparent corner to black). Matches the in-app FN palette so the icon,
+       splash, and FNScreen surface read as one continuous brand. -->
+  <rect width="100" height="100" fill="#efebde"/>
+  <!-- Sikku-knot mark (ThinkPattern logo) — one unbroken strand woven through a
+       4×4 pulli lattice, rotated 45°, with five ochre pulli. Geometry ported
+       verbatim from design/ThinkPattern/assets/brand/thinkpattern-mark.svg
+       (lib/knot.js). Scaled to ~66% of the canvas for breathing room inside the
+       iOS rounded mask. -->
+  <g transform="translate(50 50) scale(0.95) translate(-50 -50)">
+    <g transform="translate(50 50) rotate(45) scale(12.564) translate(-2.5 -2.5)">
+      <g fill="none" stroke="#1f1a14" stroke-width="0.191" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M1 0.54 L1 4.46"/>
+        <path d="M2 0.54 L2 4.46"/>
+        <path d="M3 0.54 L3 4.46"/>
+        <path d="M4 0.54 L4 4.46"/>
+        <path d="M0.54 1 L4.46 1"/>
+        <path d="M0.54 2 L4.46 2"/>
+        <path d="M0.54 3 L4.46 3"/>
+        <path d="M0.54 4 L4.46 4"/>
+        <path d="M1 0.54 A 0.46 0.46 0 1 0 0.54 1"/>
+        <path d="M4 0.54 A 0.46 0.46 0 1 1 4.46 1"/>
+        <path d="M1 4.46 A 0.46 0.46 0 1 1 0.54 4"/>
+        <path d="M4 4.46 A 0.46 0.46 0 1 0 4.46 4"/>
+        <path d="M2 0.54 A 0.5 0.5 0 0 1 3 0.54"/>
+        <path d="M2 4.46 A 0.5 0.5 0 0 0 3 4.46"/>
+        <path d="M0.54 2 A 0.5 0.5 0 0 0 0.54 3"/>
+        <path d="M4.46 2 A 0.5 0.5 0 0 1 4.46 3"/>
+      </g>
+      <g fill="#b8862a" stroke="none">
+        <circle cx="2.5" cy="2.5" r="0.14"/>
+        <circle cx="0.54" cy="0.54" r="0.14"/>
+        <circle cx="4.46" cy="0.54" r="0.14"/>
+        <circle cx="0.54" cy="4.46" r="0.14"/>
+        <circle cx="4.46" cy="4.46" r="0.14"/>
+      </g>
+    </g>
+  </g>
+</svg>

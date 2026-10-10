@@ -1,0 +1,289 @@
+{
+  "id": "pp_8eee5cd9e16c",
+  "shape": "arc",
+  "title": "Ninety Days to a Ceasefire",
+  "thesis": "The path from the March strikes on Iran to a Geneva peace framework compressed into a single season, proving the bombing and the back-channel were one policy run on two clocks.",
+  "topic": "WORLD",
+  "body": "The path from open war to a signed framework took barely a season. What looked in March like the opening of a years-long campaign instead collapsed into a negotiated pause by June — an arc compressed by exhaustion on every side [sy_332fe335b7a7, sy_0b4cd1d8d0cd].\n\n<timeline emphasis=\"escalation\">\n<step date=\"2026-03-09\">US aircraft strike Iranian missile-production sites, and Tehran vows a calibrated response [sy_332fe335b7a7].</step>\n<step date=\"2026-04-22\">Qatar quietly opens a back-channel, carrying messages between Washington and Tehran [sy_3ea3e1ab1e4b].</step>\n<step date=\"2026-05-30\">Negotiators initial a preliminary peace framework in Geneva [sy_a9392e00ca9a]. [qt_d9cff62941ba]</step>\n<step date=\"2026-06-11\">An Israel-Hezbollah truce holds, removing the last live front [sy_0b4cd1d8d0cd].</step>\n</timeline>\n\n<stat value=\"90 days\" label=\"from the first March strikes to the Geneva framework\">the entire arc, start to finish [sy_332fe335b7a7, sy_a9392e00ca9a]</stat>\n\n<callout>The lesson of the ninety days is that the strikes and the back-channel were never contradictory — they were the same policy, run on two clocks [sy_332fe335b7a7, sy_3ea3e1ab1e4b]</callout>\n\nWhat remains is durability. A framework initialed under battlefield pressure is not a treaty, and the actors who signed it each read the same document as a different kind of victory [sy_a9392e00ca9a, sy_0b4cd1d8d0cd].",
+  "body_nodes": [
+    {
+      "type": "prose",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "The path from open war to a signed framework took barely a season. What looked in March like the opening of a years-long campaign instead collapsed into a negotiated pause by June — an arc compressed by exhaustion on every side "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_332fe335b7a7",
+            "sy_0b4cd1d8d0cd"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": ".\n\n"
+        }
+      ]
+    },
+    {
+      "type": "timeline",
+      "emphasis": "escalation",
+      "steps": [
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "US aircraft strike Iranian missile-production sites, and Tehran vows a calibrated response "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_332fe335b7a7"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            }
+          ],
+          "quote_ids": [],
+          "label": null,
+          "date": "2026-03-09"
+        },
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "Qatar quietly opens a back-channel, carrying messages between Washington and Tehran "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_3ea3e1ab1e4b"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            }
+          ],
+          "quote_ids": [],
+          "label": null,
+          "date": "2026-04-22"
+        },
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "Negotiators initial a preliminary peace framework in Geneva "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_a9392e00ca9a"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": ". "
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            }
+          ],
+          "quote_ids": [
+            "qt_d9cff62941ba"
+          ],
+          "label": null,
+          "date": "2026-05-30"
+        },
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "An Israel-Hezbollah truce holds, removing the last live front "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_0b4cd1d8d0cd"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            }
+          ],
+          "quote_ids": [],
+          "label": null,
+          "date": "2026-06-11"
+        }
+      ]
+    },
+    {
+      "type": "stat",
+      "value": "90 days",
+      "label": "from the first March strikes to the Geneva framework",
+      "context": [
+        {
+          "kind": "text",
+          "text": "the entire arc, start to finish "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_332fe335b7a7",
+            "sy_a9392e00ca9a"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "The lesson of the ninety days is that the strikes and the back-channel were never contradictory — they were the same policy, run on two clocks "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_332fe335b7a7",
+            "sy_3ea3e1ab1e4b"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "\n\nWhat remains is durability. A framework initialed under battlefield pressure is not a treaty, and the actors who signed it each read the same document as a different kind of victory "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_a9392e00ca9a",
+            "sy_0b4cd1d8d0cd"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": "."
+        }
+      ]
+    }
+  ],
+  "published_at": "2026-06-19T18:25:00Z",
+  "citations": [
+    {
+      "id": "sy_332fe335b7a7",
+      "kind": "story",
+      "title": "US Strikes Iranian Missile Sites in March Escalation",
+      "url": "stories/sy_332fe335b7a7.json",
+      "date": "2026-03-09T04:00:00Z"
+    },
+    {
+      "id": "sy_0b4cd1d8d0cd",
+      "kind": "story",
+      "title": "Israel-Hezbollah Truce Holds Into June",
+      "url": "stories/sy_0b4cd1d8d0cd.json",
+      "date": "2026-06-11T20:00:00Z"
+    },
+    {
+      "id": "sy_3ea3e1ab1e4b",
+      "kind": "story",
+      "title": "Qatar Opens Back-Channel Talks With Tehran",
+      "url": "stories/sy_3ea3e1ab1e4b.json",
+      "date": "2026-04-22T18:00:00Z"
+    },
+    {
+      "id": "sy_a9392e00ca9a",
+      "kind": "story",
+      "title": "US and Iran Initial Peace Framework in Geneva",
+      "url": "stories/sy_a9392e00ca9a.json",
+      "date": "2026-05-30T13:00:00Z"
+    }
+  ],
+  "quotes": [
+    {
+      "id": "qt_d9cff62941ba",
+      "text": "Diplomacy and bombing cannot share the same calendar.",
+      "speaker": "Abbas Araghchi",
+      "source_story_id": "sy_a9392e00ca9a",
+      "source_story_title": "US and Iran Initial Peace Framework in Geneva",
+      "source_story_url": "stories/sy_a9392e00ca9a.json",
+      "source_story_date": "2026-05-30T13:00:00Z"
+    }
+  ],
+  "cards": [],
+  "entities": [
+    {
+      "id": 10,
+      "name": "Donald Trump",
+      "entity_type": "person",
+      "role": "President who pursued the strikes and the framework in parallel.",
+      "actor_id": 10,
+      "actor_url": "actors/10.json",
+      "image_url": "images/entities/10.png",
+      "thumbnail_url": "images/entities/thumbs/10.png",
+      "bio_line": "triumphant",
+      "summary": "**Donald Trump** has claimed the Iran framework as a signature achievement, presenting the March strikes and the Geneva talks as a single coercive-diplomacy strategy."
+    },
+    {
+      "id": 13,
+      "name": "Abbas Araghchi",
+      "entity_type": "person",
+      "role": "Iranian foreign minister who initialed the Geneva framework.",
+      "actor_id": 13,
+      "actor_url": "actors/13.json",
+      "image_url": "images/entities/13.png",
+      "thumbnail_url": "images/entities/thumbs/13.png",
+      "bio_line": "conciliatory",
+      "summary": "**Abbas Araghchi** led Tehran's negotiating team in Geneva, publicly insisting that diplomacy could not proceed under active bombardment."
+    },
+    {
+      "id": 2564,
+      "name": "JD Vance",
+      "entity_type": "person",
+      "role": "Vice president used as a conduit to regional mediators.",
+      "actor_id": null,
+      "actor_url": null,
+      "image_url": null,
+      "thumbnail_url": null,
+      "bio_line": null,
+      "summary": null
+    },
+    {
+      "id": 7100,
+      "name": "Government of Qatar",
+      "entity_type": "organization",
+      "role": "Opened the back-channel that carried messages between Washington and Tehran.",
+      "actor_id": null,
+      "actor_url": null,
+      "image_url": null,
+      "thumbnail_url": null,
+      "bio_line": null,
+      "summary": null
+    }
+  ]
+}

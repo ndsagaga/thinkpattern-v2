@@ -1,0 +1,243 @@
+{
+  "id": "pp_97893289f03e",
+  "shape": "pattern",
+  "title": "The Buyback Playbook",
+  "thesis": "Record share buybacks across banking, tech, and energy in the same weeks are not an earnings-season coincidence but a synchronized forecast: capital voting against its own expansion.",
+  "topic": "BUSINESS",
+  "body": "Strip the press releases of their differences and the same move repeats across unrelated industries this quarter: record cash returned to shareholders rather than redeployed [sy_f88632f76537, sy_e4dfb9f72fad, sy_ba440e41355c]. The pattern is not a coincidence of earnings season — it is a shared read on where the economy is headed.\n\n<instances as=\"cards\">\n<item>JPMorgan authorized a $30 billion repurchase, its largest single program on record [sy_f88632f76537].</item>\n<item>Apple lifted its buyback to $110 billion, even as unit growth flattened [sy_e4dfb9f72fad].</item>\n<item>ExxonMobil added $20 billion after a record quarter, choosing returns over new exploration [sy_ba440e41355c].</item>\n</instances>\n\n<quote display=\"hero\">[qt_bd80c96400c0]</quote>\n\nThree boards in three sectors arrived at the same conclusion in the same weeks: the safest use of a dollar right now is to hand it back [sy_f88632f76537, sy_ba440e41355c].\n\n<callout>A buyback wave this synchronized is a forecast in disguise — capital voting, in unison, against its own expansion [sy_e4dfb9f72fad, sy_ba440e41355c]</callout>",
+  "body_nodes": [
+    {
+      "type": "prose",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "Strip the press releases of their differences and the same move repeats across unrelated industries this quarter: record cash returned to shareholders rather than redeployed "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_f88632f76537",
+            "sy_e4dfb9f72fad",
+            "sy_ba440e41355c"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": ". The pattern is not a coincidence of earnings season — it is a shared read on where the economy is headed.\n\n"
+        }
+      ]
+    },
+    {
+      "type": "instances",
+      "arrangement": "cards",
+      "items": [
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "JPMorgan authorized a $30 billion repurchase, its largest single program on record "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_f88632f76537"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            }
+          ],
+          "quote_ids": [],
+          "label": null,
+          "date": null
+        },
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "Apple lifted its buyback to $110 billion, even as unit growth flattened "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_e4dfb9f72fad"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            }
+          ],
+          "quote_ids": [],
+          "label": null,
+          "date": null
+        },
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "ExxonMobil added $20 billion after a record quarter, choosing returns over new exploration "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_ba440e41355c"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            }
+          ],
+          "quote_ids": [],
+          "label": null,
+          "date": null
+        }
+      ]
+    },
+    {
+      "type": "quote",
+      "display": "hero",
+      "quote_id": "qt_bd80c96400c0"
+    },
+    {
+      "type": "prose",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "\n\nThree boards in three sectors arrived at the same conclusion in the same weeks: the safest use of a dollar right now is to hand it back "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_f88632f76537",
+            "sy_ba440e41355c"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": ".\n\n"
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "A buyback wave this synchronized is a forecast in disguise — capital voting, in unison, against its own expansion "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_e4dfb9f72fad",
+            "sy_ba440e41355c"
+          ]
+        }
+      ]
+    }
+  ],
+  "published_at": "2026-06-19T18:40:00Z",
+  "citations": [
+    {
+      "id": "sy_f88632f76537",
+      "kind": "story",
+      "title": "JPMorgan Authorizes $30B Buyback",
+      "url": "stories/sy_f88632f76537.json",
+      "date": "2026-06-05T12:00:00Z"
+    },
+    {
+      "id": "sy_e4dfb9f72fad",
+      "kind": "story",
+      "title": "Apple Lifts Repurchase Program to $110B",
+      "url": "stories/sy_e4dfb9f72fad.json",
+      "date": "2026-05-20T20:00:00Z"
+    },
+    {
+      "id": "sy_ba440e41355c",
+      "kind": "story",
+      "title": "ExxonMobil Adds $20B to Buyback After Record Quarter",
+      "url": "stories/sy_ba440e41355c.json",
+      "date": "2026-06-02T11:00:00Z"
+    }
+  ],
+  "quotes": [
+    {
+      "id": "qt_bd80c96400c0",
+      "text": "We are not short of places to invest; we are short of reasons to.",
+      "speaker": "Jamie Dimon",
+      "source_story_id": "sy_f88632f76537",
+      "source_story_title": "JPMorgan Authorizes $30B Buyback",
+      "source_story_url": "stories/sy_f88632f76537.json",
+      "source_story_date": "2026-06-05T12:00:00Z"
+    }
+  ],
+  "cards": [],
+  "entities": [
+    {
+      "id": 7200,
+      "name": "Jamie Dimon",
+      "entity_type": "person",
+      "role": "Bank CEO whose framing crystallizes the buyback rationale.",
+      "actor_id": 7200,
+      "actor_url": "actors/7200.json",
+      "image_url": "images/entities/7200.png",
+      "thumbnail_url": "images/entities/thumbs/7200.png",
+      "bio_line": "neutral",
+      "summary": "**Jamie Dimon** has repeatedly argued that abundant capital and scarce attractive investments are pushing large firms toward returning cash rather than deploying it."
+    },
+    {
+      "id": 7203,
+      "name": "JPMorgan Chase",
+      "entity_type": "organization",
+      "role": "Authorized its largest single buyback on record.",
+      "actor_id": null,
+      "actor_url": null,
+      "image_url": null,
+      "thumbnail_url": null,
+      "bio_line": null,
+      "summary": null
+    },
+    {
+      "id": 7201,
+      "name": "Apple",
+      "entity_type": "organization",
+      "role": "Raised its repurchase program to $110 billion amid flat unit growth.",
+      "actor_id": null,
+      "actor_url": null,
+      "image_url": null,
+      "thumbnail_url": null,
+      "bio_line": null,
+      "summary": null
+    },
+    {
+      "id": 7202,
+      "name": "ExxonMobil",
+      "entity_type": "organization",
+      "role": "Added $20 billion in buybacks after a record quarter.",
+      "actor_id": null,
+      "actor_url": null,
+      "image_url": null,
+      "thumbnail_url": null,
+      "bio_line": null,
+      "summary": null
+    }
+  ]
+}

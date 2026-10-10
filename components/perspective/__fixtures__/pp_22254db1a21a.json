@@ -1,0 +1,265 @@
+{
+  "id": "pp_22254db1a21a",
+  "shape": "divide",
+  "title": "The Open-Weight Schism",
+  "thesis": "The frontier-AI debate has hardened from safety-versus-speed into a schism over who may hold model weights, and the EU's coming carve-out will encode one camp's worldview as the global default.",
+  "topic": "TECHNOLOGY",
+  "body": "For two years the fight over frontier AI was sold as safety versus speed. The real fault line runs elsewhere — over who is allowed to hold the weights [sy_3f6d1847c31e, sy_dbaa00b4db57]. As Washington tightens its export orders and Brussels drafts its exceptions, the major labs have hardened into camps that no longer share a definition of \"responsible\" [sy_d161e15367d3].\n\n<define term=\"open-weight\">a model whose trained parameters are published for anyone to download, run, and fine-tune offline, with no API in the loop</define>\n\n<divide axis=\"Should frontier model weights be published at all?\">\n<camp label=\"Open by default\">Publishing weights is the only credible form of external audit and a hedge against a handful of vendors owning the entire stack [sy_3f6d1847c31e]. [qt_8a9634dd25c1]</camp>\n<camp label=\"API-only\">A downloaded weight can never be recalled once misuse appears, so capability has to stay behind a metered endpoint that an export order can switch off [sy_dbaa00b4db57].</camp>\n<camp label=\"Regulated middle\">Neither absolute survives contact with the AI Act; gate only the largest training runs and leave the rest open [sy_d161e15367d3].</camp>\n</divide>\n\nThis is not a clash of values. It is a clash over a single fact: whether a published weight is a telescope or a loaded gun [sy_3f6d1847c31e, sy_dbaa00b4db57].\n\n<callout>The schism matters because whichever camp the EU's carve-out encodes becomes the global default — and the draft is being written right now [sy_d161e15367d3, pp_e27d7568051d]</callout>",
+  "body_nodes": [
+    {
+      "type": "prose",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "For two years the fight over frontier AI was sold as safety versus speed. The real fault line runs elsewhere — over who is allowed to hold the weights "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_3f6d1847c31e",
+            "sy_dbaa00b4db57"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": ". As Washington tightens its export orders and Brussels drafts its exceptions, the major labs have hardened into camps that no longer share a definition of \"responsible\" "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_d161e15367d3"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": ".\n\n"
+        },
+        {
+          "kind": "define",
+          "term": "open-weight",
+          "gloss": "a model whose trained parameters are published for anyone to download, run, and fine-tune offline, with no API in the loop"
+        },
+        {
+          "kind": "text",
+          "text": "\n\n"
+        }
+      ]
+    },
+    {
+      "type": "divide",
+      "axis": "Should frontier model weights be published at all?",
+      "camps": [
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "\n"
+            },
+            {
+              "kind": "text",
+              "text": "Publishing weights is the only credible form of external audit and a hedge against a handful of vendors owning the entire stack "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_3f6d1847c31e"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": ". "
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            }
+          ],
+          "quote_ids": [
+            "qt_8a9634dd25c1"
+          ],
+          "label": "Open by default",
+          "date": null
+        },
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "A downloaded weight can never be recalled once misuse appears, so capability has to stay behind a metered endpoint that an export order can switch off "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_dbaa00b4db57"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            }
+          ],
+          "quote_ids": [],
+          "label": "API-only",
+          "date": null
+        },
+        {
+          "spans": [
+            {
+              "kind": "text",
+              "text": "Neither absolute survives contact with the AI Act; gate only the largest training runs and leave the rest open "
+            },
+            {
+              "kind": "citation",
+              "refs": [
+                "sy_d161e15367d3"
+              ]
+            },
+            {
+              "kind": "text",
+              "text": "."
+            },
+            {
+              "kind": "text",
+              "text": "\n"
+            }
+          ],
+          "quote_ids": [],
+          "label": "Regulated middle",
+          "date": null
+        }
+      ]
+    },
+    {
+      "type": "prose",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "\n\nThis is not a clash of values. It is a clash over a single fact: whether a published weight is a telescope or a loaded gun "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_3f6d1847c31e",
+            "sy_dbaa00b4db57"
+          ]
+        },
+        {
+          "kind": "text",
+          "text": ".\n\n"
+        }
+      ]
+    },
+    {
+      "type": "callout",
+      "spans": [
+        {
+          "kind": "text",
+          "text": "The schism matters because whichever camp the EU's carve-out encodes becomes the global default — and the draft is being written right now "
+        },
+        {
+          "kind": "citation",
+          "refs": [
+            "sy_d161e15367d3",
+            "pp_e27d7568051d"
+          ]
+        }
+      ]
+    }
+  ],
+  "published_at": "2026-06-19T18:10:00Z",
+  "citations": [
+    {
+      "id": "sy_3f6d1847c31e",
+      "kind": "story",
+      "title": "Meta Releases Llama 5 Weights Under Permissive License",
+      "url": "stories/sy_3f6d1847c31e.json",
+      "date": "2026-06-12T09:00:00Z"
+    },
+    {
+      "id": "sy_dbaa00b4db57",
+      "kind": "story",
+      "title": "OpenAI Restricts API Access After New Export Order",
+      "url": "stories/sy_dbaa00b4db57.json",
+      "date": "2026-06-14T15:30:00Z"
+    },
+    {
+      "id": "sy_d161e15367d3",
+      "kind": "story",
+      "title": "EU AI Office Drafts Open-Model Carve-Out",
+      "url": "stories/sy_d161e15367d3.json",
+      "date": null
+    },
+    {
+      "id": "pp_e27d7568051d",
+      "kind": "perspective",
+      "title": "The Anatomy of a Standard",
+      "url": "perspectives/pp_e27d7568051d.json",
+      "date": "2026-06-19T19:40:00Z"
+    }
+  ],
+  "quotes": [
+    {
+      "id": "qt_8a9634dd25c1",
+      "text": "Open weights are not a risk vector — they are the only audit trail we have.",
+      "speaker": "Yann LeCun",
+      "source_story_id": "sy_3f6d1847c31e",
+      "source_story_title": "Meta Releases Llama 5 Weights Under Permissive License",
+      "source_story_url": "stories/sy_3f6d1847c31e.json",
+      "source_story_date": "2026-06-12T09:00:00Z"
+    }
+  ],
+  "cards": [],
+  "entities": [
+    {
+      "id": 1353,
+      "name": "Meta",
+      "entity_type": "organization",
+      "role": "Published the Llama 5 weights, anchoring the open-weight camp.",
+      "actor_id": 1353,
+      "actor_url": "actors/1353.json",
+      "image_url": "images/entities/1353.png",
+      "thumbnail_url": "images/entities/thumbs/1353.png",
+      "bio_line": "combative",
+      "summary": "**Meta** has positioned itself as the standard-bearer for open-weight AI, arguing that publishing model parameters is the only durable check on a concentrated industry."
+    },
+    {
+      "id": 7002,
+      "name": "Yann LeCun",
+      "entity_type": "person",
+      "role": "Chief AI scientist who frames open weights as an audit mechanism.",
+      "actor_id": 7002,
+      "actor_url": "actors/7002.json",
+      "image_url": "images/entities/7002.png",
+      "thumbnail_url": "images/entities/thumbs/7002.png",
+      "bio_line": "defensive",
+      "summary": "**Yann LeCun** is the most prominent technical voice for releasing model weights, casting closed APIs as unauditable black boxes."
+    },
+    {
+      "id": 7001,
+      "name": "OpenAI",
+      "entity_type": "organization",
+      "role": "Restricted API access under a new export order, anchoring the closed camp.",
+      "actor_id": null,
+      "actor_url": null,
+      "image_url": null,
+      "thumbnail_url": null,
+      "bio_line": null,
+      "summary": null
+    },
+    {
+      "id": 523,
+      "name": "European Union",
+      "entity_type": "organization",
+      "role": "Drafting an open-model carve-out under the AI Act that may set the global default.",
+      "actor_id": null,
+      "actor_url": null,
+      "image_url": null,
+      "thumbnail_url": null,
+      "bio_line": null,
+      "summary": null
+    }
+  ]
+}

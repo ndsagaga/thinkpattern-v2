@@ -1,26 +1,21 @@
 # ThinkPattern v2
 
-Hackathon project: new things built **on top of** the existing ThinkPattern product — extensions, a possible new mobile design, and whatever else the plan lands on.
+ThinkPattern is a news reader that groups the whole press's coverage of an event into one **Story**, profiles the **Actors** involved, and publishes **Perspectives**: columns that connect stories over time.
 
-> Status: **exploring.** Direction is not decided yet, so there is intentionally no app scaffolding here. See the planning doc.
+This repo is our hackathon build of the ThinkPattern app for the web, so anyone can open it on their phone from a link. It reads live data from the production ThinkPattern feed.
 
-- **Planning doc:** https://docs.google.com/document/d/1yFpaSruQ9Bxq0mrSX_mc11xc1HGSeGyrkOKJLODFX0U/edit
-- **Existing backend:** [ndsagaga/perspectives-backend](https://github.com/ndsagaga/perspectives-backend) — Python batch pipeline that publishes news stories, actors and perspectives.
-- **Existing mobile app:** [ndsagaga/perspectives-mobile](https://github.com/ndsagaga/perspectives-mobile) — Expo / React Native app ("ThinkPattern").
+## Run locally
 
-## What we can build on
+```bash
+npm install
+npm run build:web
+```
 
-| Surface | Where |
-| --- | --- |
-| Static JSON CDN (`manifest.json`, `stories/`, `actors/`, `perspectives/`) | `perspectives-backend/docs/serve_contract.md` |
-| Search API `GET https://thinkpattern.ai/api/search` | `perspectives-backend/web/worker` |
-| MCP server `POST https://thinkpattern.ai/mcp` (`search_news`, `get_latest_news`) | `perspectives-backend/web/worker` |
-| Generated TS types for the contract | `perspectives-mobile/types/contract.gen.ts` |
-| Design system and tokens | `perspectives-mobile/design/ThinkPattern/`, `constants/tokens.json` |
+The output is in `dist/`. Deployed on Vercel (`vercel.json`): `/cdn/*` proxies the public data feed at `internal.thinkpattern.ai`.
 
-## Working here
+## Related repos
 
-- Clone the two existing repos next to this one (`../perspectives-backend`, `../perspectives-mobile`) for reference.
-- Branch off `main`, keep PRs small, and say in the PR what part of the plan it covers.
-- Never commit secrets. Use `.env.local` / `.env` files (gitignored) and add names to a `.env.example`.
-- AI agents: read [AGENTS.md](AGENTS.md).
+- [perspectives-mobile](https://github.com/ndsagaga/perspectives-mobile): the native iOS/Android app this is built from.
+- [perspectives-backend](https://github.com/ndsagaga/perspectives-backend): the pipeline that publishes the stories feed.
+
+AI agents: read [AGENTS.md](AGENTS.md).
