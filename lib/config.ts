@@ -20,6 +20,8 @@ const rawEnv = {
   EXPO_PUBLIC_POSTHOG_HOST: process.env.EXPO_PUBLIC_POSTHOG_HOST,
   EXPO_PUBLIC_FCM_TOPIC: process.env.EXPO_PUBLIC_FCM_TOPIC,
   EXPO_PUBLIC_ENV: process.env.EXPO_PUBLIC_ENV,
+  EXPO_PUBLIC_SUPABASE_URL: process.env.EXPO_PUBLIC_SUPABASE_URL,
+  EXPO_PUBLIC_SUPABASE_ANON_KEY: process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY,
 } as const;
 
 // Throw loudly on missing required values rather than fall back silently —
@@ -57,6 +59,9 @@ export const config = {
   // dev/preview/prod traffic stays separable. Note `__DEV__` (running through
   // Metro) is the on/off switch for telemetry; this is only the label.
   env: rawEnv.EXPO_PUBLIC_ENV ?? 'local',
+  // Supabase (accounts, likes, comments). Optional: unset → reactions hidden.
+  supabaseUrl: rawEnv.EXPO_PUBLIC_SUPABASE_URL ?? null,
+  supabaseAnonKey: rawEnv.EXPO_PUBLIC_SUPABASE_ANON_KEY ?? null,
 };
 
 // Resolve a bucket-relative asset path to a full CDN URL. Per

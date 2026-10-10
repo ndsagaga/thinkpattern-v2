@@ -1,5 +1,6 @@
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
+import { Reactions } from '@/components/Reactions';
 import { FNCap } from '@/components/fn/FNCap';
 import { FNRule } from '@/components/fn/FNRule';
 import { colors } from '@/constants/Colors';
@@ -43,6 +44,7 @@ export function PerspectiveDetail({ perspective }: Props) {
       ) : null}
       <FNRule style={styles.rule} />
       <PerspectiveBody perspective={perspective} />
+      <Reactions type="perspective" id={perspective.id} />
     </ScrollView>
   );
 }

@@ -13,7 +13,9 @@ import { FNToggle } from '@/components/fn/FNToggle';
 import { colors } from '@/constants/Colors';
 import { fontFamily, fontSize, typography } from '@/constants/Typography';
 import { spacing } from '@/constants/Spacing';
+import { signOut, useAuth } from '@/hooks/useAuth';
 import { useNotificationSetting } from '@/hooks/useNotificationSetting';
+import { supabase } from '@/lib/supabase';
 import { emit } from '@/lib/events';
 import { Sentry } from '@/lib/sentry';
 import { useSavedItems } from '@/lib/saved';
@@ -56,11 +58,32 @@ function openPrivacy() {
 export default function SettingsScreen() {
   const savedCount = useSavedItems().length;
   const notif = useNotificationSetting();
+  const { user } = useAuth();
 
   return (
     <FNScreen>
       <FNSubNav title="Settings" />
       <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
+        {supabase ? (
+          <>
+            <FNCap style={styles.group}>Account</FNCap>
+            {user ? (
+              <FNSettingsRow
+                icon={<PersonIcon />}
+                label={user.name}
+                sublabel={user.email}
+                onPress={signOut}
+                right={<Text style={styles.signOut}>Sign out</Text>}
+                last
+              />
+            ) : (
+              <Link href="/signin" asChild>
+                <FNSettingsRow icon={<PersonIcon />} label="Sign in to like and comment" right={<Chevron />} last />
+              </Link>
+            )}
+          </>
+        ) : null}
+
         <FNCap style={styles.group}>Library</FNCap>
         <Link href="/saved" asChild>
           <FNSettingsRow
@@ -120,6 +143,15 @@ export default function SettingsScreen() {
         ) : null}
       </ScrollView>
     </FNScreen>
+  );
+}
+
+function PersonIcon() {
+  return (
+    <Svg width={18} height={18} viewBox="0 0 24 24" fill="none" stroke={colors.ink} strokeWidth={1.6}>
+      <Circle cx={12} cy={8} r={4} />
+      <Path d="M4 20c1.5-3.5 4.5-5 8-5s6.5 1.5 8 5" strokeLinecap="round" />
+    </Svg>
   );
 }
 
@@ -187,6 +219,7 @@ const styles = StyleSheet.create({
   scroll: { paddingHorizontal: spacing.gutter, paddingBottom: spacing.xxl },
   group: { marginTop: spacing.xxl, marginBottom: spacing.xs }, // 24 / 4
   count: { ...typography.num, fontSize: fontSize.fine, color: colors.muted },
+  signOut: { fontFamily: fontFamily.uiSemiBold, fontSize: fontSize.detail, color: colors.link },
   chevron: { fontFamily: fontFamily.bodyRegular, fontSize: fontSize.lead, color: colors.faint },
   version: { ...typography.num, fontSize: fontSize.fine, color: colors.muted, marginTop: spacing.xxl },
 });

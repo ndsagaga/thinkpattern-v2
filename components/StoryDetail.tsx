@@ -7,6 +7,7 @@ import {
   FNAllSourcesSheet,
   type FNAllSourcesSheetHandle,
 } from '@/components/fn/FNAllSourcesSheet';
+import { Reactions } from '@/components/Reactions';
 import { FNCap } from '@/components/fn/FNCap';
 import { FNLocationTag } from '@/components/fn/FNLocationTag';
 import { FNQuote } from '@/components/fn/FNQuote';
@@ -113,6 +114,7 @@ export function StoryDetail({ story }: Props) {
           <Text style={styles.moreLink}>+ {moreCount} more sources →</Text>
         </Pressable>
       )}
+      <Reactions type="story" id={story.id} />
       <FNAllSourcesSheet
         ref={sheetRef}
         storyTitle={story.title}
