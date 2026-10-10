@@ -8,6 +8,7 @@ import {
   type FNAllSourcesSheetHandle,
 } from '@/components/fn/FNAllSourcesSheet';
 import { Reactions } from '@/components/Reactions';
+import { useScrollToOnce } from '@/hooks/useScrollToOnce';
 import { FNCap } from '@/components/fn/FNCap';
 import { FNLocationTag } from '@/components/fn/FNLocationTag';
 import { FNQuote } from '@/components/fn/FNQuote';
@@ -25,7 +26,7 @@ import type {
 import { entityInitials, faviconUrl, friendlySourceName } from '@/utils/sources';
 import { formatRecency, formatShortDate } from '@/utils/time';
 
-type Props = { story: StoryDetailType };
+type Props = { story: StoryDetailType; focusComments?: boolean };
 
 const TOP_SOURCES_LIMIT = 3;
 
@@ -33,7 +34,8 @@ const TOP_SOURCES_LIMIT = 3;
 const PERSON_TINT = '#7d4a18'; // burnt sienna
 const ORG_TINT = '#1f5a4e'; // teal
 
-export function StoryDetail({ story }: Props) {
+export function StoryDetail({ story, focusComments }: Props) {
+  const scrollToComments = useScrollToOnce(focusComments);
   // Imperative handle to the sources sheet. Idiomatic gorhom usage:
   // tap the "+N more" Pressable → call sheet.open() directly. No React
   // state to mirror the sheet's open/closed status — the sheet owns it.
@@ -51,7 +53,7 @@ export function StoryDetail({ story }: Props) {
   const primaryLocation = story.locations?.find((l) => l.is_primary);
 
   return (
-    <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
+    <ScrollView ref={scrollToComments.ref} contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
       {/* Header */}
       <View style={styles.headSection}>
         {/* Meta kicker is a date (start), not relative recency, per design SSOT. */}
@@ -114,7 +116,9 @@ export function StoryDetail({ story }: Props) {
           <Text style={styles.moreLink}>+ {moreCount} more sources →</Text>
         </Pressable>
       )}
-      <Reactions type="story" id={story.id} />
+      <View onLayout={(e) => scrollToComments(e.nativeEvent.layout.y)}>
+        <Reactions type="story" id={story.id} />
+      </View>
       <FNAllSourcesSheet
         ref={sheetRef}
         storyTitle={story.title}

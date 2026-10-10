@@ -1,6 +1,7 @@
 import { ScrollView, StyleSheet, Text, View } from 'react-native';
 
 import { Reactions } from '@/components/Reactions';
+import { useScrollToOnce } from '@/hooks/useScrollToOnce';
 import { FNCap } from '@/components/fn/FNCap';
 import { FNRule } from '@/components/fn/FNRule';
 import { colors } from '@/constants/Colors';
@@ -12,16 +13,17 @@ import { formatShortDate } from '@/utils/time';
 import { PerspectiveBody } from './perspective/PerspectiveBody';
 import { PerspectiveListen } from './perspective/PerspectiveListen';
 
-type Props = { perspective: PerspectiveDetailType };
+type Props = { perspective: PerspectiveDetailType; focusComments?: boolean };
 
 // The columnist read: dated/topic kicker, title, thesis dek (the standfirst),
 // then the parsed body (prose + footnotes + set-off components) closing on the
 // auto source rail. `shape` is internal and never shown.
 // Source: design/ThinkPattern PerspectiveDetail.
-export function PerspectiveDetail({ perspective }: Props) {
+export function PerspectiveDetail({ perspective, focusComments }: Props) {
+  const scrollToComments = useScrollToOnce(focusComments);
   const sourceCount = perspective.citations?.length ?? 0;
   return (
-    <ScrollView contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
+    <ScrollView ref={scrollToComments.ref} contentContainerStyle={styles.scroll} showsVerticalScrollIndicator={false}>
       <View style={styles.head}>
         {/* Dateline (local date + time) with its source count on the left;
             topic on the right — mirrors StoryDetail's meta row. */}
@@ -44,7 +46,9 @@ export function PerspectiveDetail({ perspective }: Props) {
       ) : null}
       <FNRule style={styles.rule} />
       <PerspectiveBody perspective={perspective} />
-      <Reactions type="perspective" id={perspective.id} />
+      <View onLayout={(e) => scrollToComments(e.nativeEvent.layout.y)}>
+        <Reactions type="perspective" id={perspective.id} />
+      </View>
     </ScrollView>
   );
 }

@@ -27,7 +27,7 @@ const storySavedRef = (s: StoryDetailData): ContentRef => ({
 });
 
 export default function StoryRoute() {
-  const { id, from } = useLocalSearchParams<{ id: string; from?: string }>();
+  const { id, from, focus } = useLocalSearchParams<{ id: string; from?: string; focus?: string }>();
   const sizeClass = useSizeClass();
 
   // Tablets have no standalone detail — select into the shell's detail pane and
@@ -36,10 +36,10 @@ export default function StoryRoute() {
     return <TabletDetailRedirect lens="stories" id={id} />;
   }
 
-  return <StoryScreen id={id} from={from} />;
+  return <StoryScreen id={id} from={from} focus={focus} />;
 }
 
-function StoryScreen({ id, from }: { id: string; from?: string }) {
+function StoryScreen({ id, from, focus }: { id: string; from?: string; focus?: string }) {
   const detail = useStoryDetailQuery(id);
   const origin = originFromParam(from);
 
@@ -59,7 +59,7 @@ function StoryScreen({ id, from }: { id: string; from?: string }) {
     >
       {(data) => (
         <>
-          <StoryDetail story={data} />
+          <StoryDetail story={data} focusComments={focus === 'comments'} />
           {/* First value moment → one-time push opt-in (editorial priming →
               OS ask). Push opens skip it — the user demonstrably has pushes. */}
           {origin !== 'notification' ? <NotifPrimingHost /> : null}

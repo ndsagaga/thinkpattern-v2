@@ -1,10 +1,10 @@
 import { Link } from 'expo-router';
 import { useState } from 'react';
 import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
-import Svg, { Path } from 'react-native-svg';
 
 import { FNCap } from '@/components/fn/FNCap';
 import { FNRule } from '@/components/fn/FNRule';
+import { HeartIcon as Heart } from '@/components/ReactionIcons';
 import { colors } from '@/constants/Colors';
 import { spacing } from '@/constants/Spacing';
 import { fontFamily, fontSize, typography } from '@/constants/Typography';
@@ -127,20 +127,6 @@ function ReactionsInner({ type, id }: { type: TargetType; id: string }) {
         </Link>
       )}
     </View>
-  );
-}
-
-function Heart({ filled }: { filled: boolean }) {
-  return (
-    <Svg width={18} height={18} viewBox="0 0 24 24">
-      <Path
-        d="M12 20.5s-7.5-4.6-9.3-9.2C1.4 8 3.6 4.5 7.1 4.5c2 0 3.6 1.1 4.9 2.8 1.3-1.7 2.9-2.8 4.9-2.8 3.5 0 5.7 3.5 4.4 6.8-1.8 4.6-9.3 9.2-9.3 9.2z"
-        fill={filled ? colors.link : 'none'}
-        stroke={filled ? colors.link : colors.ink2}
-        strokeWidth={1.6}
-        strokeLinejoin="round"
-      />
-    </Svg>
   );
 }
 

@@ -27,7 +27,7 @@ const perspectiveSavedRef = (p: PerspectiveDetailData): ContentRef => ({
 });
 
 export default function PerspectiveRoute() {
-  const { id, from } = useLocalSearchParams<{ id: string; from?: string }>();
+  const { id, from, focus } = useLocalSearchParams<{ id: string; from?: string; focus?: string }>();
   const sizeClass = useSizeClass();
 
   // Tablets: select into the shell's detail pane instead of rendering a
@@ -36,10 +36,10 @@ export default function PerspectiveRoute() {
     return <TabletDetailRedirect lens="perspectives" id={id} />;
   }
 
-  return <PerspectiveScreen id={id} from={from} />;
+  return <PerspectiveScreen id={id} from={from} focus={focus} />;
 }
 
-function PerspectiveScreen({ id, from }: { id: string; from?: string }) {
+function PerspectiveScreen({ id, from, focus }: { id: string; from?: string; focus?: string }) {
   const detail = usePerspectiveDetailQuery(id);
   const origin = originFromParam(from);
 
@@ -59,7 +59,7 @@ function PerspectiveScreen({ id, from }: { id: string; from?: string }) {
     >
       {(data) => (
         <>
-          <PerspectiveDetail perspective={data} />
+          <PerspectiveDetail perspective={data} focusComments={focus === 'comments'} />
           {/* First value moment → one-time push opt-in. Push opens skip it —
               the user demonstrably has pushes. */}
           {origin !== 'notification' ? <NotifPrimingHost /> : null}
