@@ -9,6 +9,7 @@ import { FNSourceRail, type FNSourceItem } from '@/components/fn/FNSourceRail';
 import { colors } from '@/constants/Colors';
 import { spacing } from '@/constants/Spacing';
 import { FRAUNCES_LEADING, fontFamily, fontSize, typography } from '@/constants/Typography';
+import { useReactionCounts } from '@/hooks/useReactions';
 import { emit } from '@/lib/events';
 import type { SearchStoryEntry, StoryIndexEntry } from '@/types/contract';
 import { openInAppBrowser } from '@/utils/browser';
@@ -41,6 +42,7 @@ export function StoryListItem({ story, sourcesRef }: Props) {
     [story.preview_articles],
   );
   const layout = chooseSourceLayout(top.map((t) => t.title));
+  const reactions = useReactionCounts('story').data?.get(story.id);
 
   // Tap on a source row/tile opens the article in the in-app browser.
   // The parent Link wrapping the card stays the default tap target for
@@ -60,6 +62,23 @@ export function StoryListItem({ story, sourcesRef }: Props) {
         <View style={styles.eyebrowLeft}>
           <FNSavedMark id={story.id} />
           <FNCap>{formatRecency(story.time_start)}</FNCap>
+          {reactions ? (
+            <FNCap>
+              ·{' '}
+              {reactions.likes > 0 ? (
+                <>
+                  <Text style={typography.num}>{reactions.likes}</Text> {reactions.likes === 1 ? 'like' : 'likes'}
+                </>
+              ) : null}
+              {reactions.likes > 0 && reactions.comments > 0 ? ' · ' : null}
+              {reactions.comments > 0 ? (
+                <>
+                  <Text style={typography.num}>{reactions.comments}</Text>{' '}
+                  {reactions.comments === 1 ? 'comment' : 'comments'}
+                </>
+              ) : null}
+            </FNCap>
+          ) : null}
         </View>
         <FNLocationTag place={story.primary_location?.country} />
       </View>

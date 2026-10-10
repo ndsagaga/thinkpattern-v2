@@ -54,7 +54,10 @@ export function useToggleLike(type: TargetType, id: string, user: AuthUser | nul
       return { prev };
     },
     onError: (_e, _like, ctx) => qc.setQueryData(key, ctx?.prev),
-    onSettled: () => qc.invalidateQueries({ queryKey: key }),
+    onSettled: () => {
+      qc.invalidateQueries({ queryKey: key });
+      qc.invalidateQueries({ queryKey: ['reactions', 'counts', type] });
+    },
   });
 }
 
@@ -85,7 +88,10 @@ export function useAddComment(type: TargetType, id: string, user: AuthUser | nul
         .insert({ target_type: type, target_id: id, author_name: user!.name, body });
       if (error) throw error;
     },
-    onSuccess: () => qc.invalidateQueries({ queryKey: commentsKey(type, id) }),
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: commentsKey(type, id) });
+      qc.invalidateQueries({ queryKey: ['reactions', 'counts', type] });
+    },
   });
 }
 
@@ -96,6 +102,39 @@ export function useDeleteComment(type: TargetType, id: string) {
       const { error } = await supabase!.from('comments').delete().eq('id', commentId);
       if (error) throw error;
     },
-    onSuccess: () => qc.invalidateQueries({ queryKey: commentsKey(type, id) }),
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: commentsKey(type, id) });
+      qc.invalidateQueries({ queryKey: ['reactions', 'counts', type] });
+    },
+  });
+}
+
+export type ReactionCounts = { likes: number; comments: number };
+
+// Like + comment counts for every item of a type, in one round trip each —
+// shared by all feed cards through the query cache.
+export function useReactionCounts(type: TargetType) {
+  return useQuery({
+    queryKey: ['reactions', 'counts', type],
+    enabled: !!supabase,
+    staleTime: 30_000,
+    meta: { noPersist: true },
+    queryFn: async (): Promise<Map<string, ReactionCounts>> => {
+      const [likes, comments] = await Promise.all([
+        supabase!.from('likes').select('target_id').eq('target_type', type),
+        supabase!.from('comments').select('target_id').eq('target_type', type),
+      ]);
+      if (likes.error) throw likes.error;
+      if (comments.error) throw comments.error;
+      const counts = new Map<string, ReactionCounts>();
+      const bump = (id: string, k: keyof ReactionCounts) => {
+        const c = counts.get(id) ?? { likes: 0, comments: 0 };
+        c[k] += 1;
+        counts.set(id, c);
+      };
+      likes.data.forEach((r) => bump(r.target_id, 'likes'));
+      comments.data.forEach((r) => bump(r.target_id, 'comments'));
+      return counts;
+    },
   });
 }
